@@ -82,17 +82,17 @@ class TicTacToe
   end
   
   def full?
-    if @board.all?{|position| position == "X" || position == "O"}
+    @board.all?{|position| position == "X" || position == "O"}
     #if won? == false && @board.all?{|position| position == "X" || position == "O"}
-      true
-    else
-      false
-    end
+      #true
+    #else
+      #false
+    #end
   end
   
   def draw?
     #full?
-    #if won? == false @@ full? == true
+    if won? == false @@ full? == true
   end
   
   def over?
